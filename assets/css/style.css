@@ -464,11 +464,11 @@ template {
 /* xx */
 html {
   overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  max-width: 1380px;
-  width: 100%;
   max-width: 1380px;
   margin: 0 auto;
   -webkit-transition: opacity 1s ease 0s;
@@ -480,6 +480,36 @@ body {
   background-attachment: fixed;
   background-position: top center;
   background-size: cover;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #eeeeee;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header {
@@ -521,7 +551,50 @@ body {
 .header-logo__description {
   display: block;
   color: #eeeeee;
+  font-family: "Roboto", sans-serif;
   text-align: center;
+}
+
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.header-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-menu__list.active a {
+  color: #bb1a1a;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 1px 3px #000000, 1px 1px 10px #000000;
+}
+
+.header-menu__link {
+  display: block;
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  line-height: 21px;
+}
+
+.widget {
+  margin: 0 0 15px;
+  padding: 15px;
+  color: #eeeeee;
+  border-radius: 7px;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 768px) {
@@ -536,6 +609,30 @@ body {
   .header-logo__description {
     letter-spacing: 0.2em;
     font-weight: 700;
+  }
+}
+
+@media (min-width: 992px) {
+  .left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 220px;
+            flex: 0 0 220px;
+    margin-bottom: 15px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 1199.8px) {
+  body {
+    padding: 0 15px;
   }
 }
 

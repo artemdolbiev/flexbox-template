@@ -1,18 +1,51 @@
 html {
-    overflow: hidden;
+	overflow: hidden;
+	box-sizing: border-box;
 }
 
 body {
+	max-width: 1380px;
+	margin: 0 auto;
+	transition: opacity 1s ease 0s;
+	opacity: 1;
+	background-color: #d8b036;
+	background-image: url(../img/global-bg.jpg);
+	background-attachment: fixed;
+	background-position: top center;
+	background-size: cover;
+	font-size: 14px;
+	font-family: $font-main;
+	font-weight: 400;
+	color: $color-light;
 
-    max-width: 1380px;
-    width: 100%;
-    max-width: 1380px;
-    margin: 0 auto;
-    transition: opacity 1s ease 0s;
-    opacity: 1;
-    background-color: #d8b036;
-    background-image: url(../img/global-bg.jpg);
-    background-attachment: fixed;
-    background-position: top center;
-    background-size: cover;
+	@include lg-min {
+		padding: 0 30px;
+	}
+	@include lg {
+		padding: 0 15px;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+.container {
+	display: flex;
 }

@@ -1,0 +1,24 @@
+.header-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.3);
+
+  &__list {
+    display: flex;
+
+    &.active a {
+      color: #bb1a1a;
+      background: rgba(0, 0, 0, 0.4);
+      text-shadow: 1px 1px 3px #000000, 1px 1px 10px #000000;
+    }
+  }
+
+  &__link {
+    display: block;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    line-height: 21px;
+  }
+}
