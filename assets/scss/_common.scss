@@ -1,0 +1,18 @@
+html {
+    overflow: hidden;
+}
+
+body {
+
+    max-width: 1380px;
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+    transition: opacity 1s ease 0s;
+    opacity: 1;
+    background-color: #d8b036;
+    background-image: url(../img/global-bg.jpg);
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+}
