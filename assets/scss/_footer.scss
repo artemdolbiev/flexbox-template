@@ -5,6 +5,9 @@
     display: flex;
     margin-left: -7.5px;
     margin-right: -7.5px;
+    @include md {
+      flex-wrap: wrap;
+    }
 
     &__item {
       color: #eeeeee;
@@ -12,6 +15,12 @@
 
       @include md-min {
         flex: 0 0 25%;
+      }
+      @include md-xs {
+        flex: 0 0 50%;
+      }
+      @include xs {
+        width: 100%;
       }
     }
   }

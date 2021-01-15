@@ -12,8 +12,12 @@
       margin-bottom: 30px;
     }
 
-    @include sm {
+    @include sm-xx {
       max-width: 300px;
+      margin-bottom: 15px;
+    }
+    @include xx {
+      max-width: 80%;
       margin-bottom: 15px;
     }
   }

@@ -10,8 +10,9 @@
   & span {
     position: relative;
     margin-right: 7px;
+
+    &:nth-of-type(3){
+      color: #cccccc;
+    }
   }
-}
-.color {
-  color: #cccccc;
 }

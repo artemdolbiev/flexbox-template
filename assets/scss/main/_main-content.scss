@@ -9,8 +9,18 @@
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 90%, rgba(0, 0, 0, 0) 100%);
     font-family: $font-header;
     font-weight: 300;
-    font-size: 28px;
     line-height: 42px;
+
+    @include sm-min {
+      font-size: 2rem;
+    }
+
+    @include sm-xs {
+      font-size: 1.5rem;
+    }
+    @include xs {
+      font-size: 1rem;
+    }
   }
 
   &__body {
@@ -23,8 +33,17 @@
   }
   
   &-item {
-    flex: 0 0 33.3333%;
     padding: 7.5px;
+
+    @include sm-min {
+      flex: 0 0 33.3333%;
+    }
+    @include sm-xs {
+      flex: 0 0 50%;
+    }
+    @include xs {
+      flex: 0 0 100%;
+    }
 
     &:hover {
 

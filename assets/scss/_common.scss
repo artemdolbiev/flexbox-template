@@ -58,5 +58,9 @@ p {
 }
 
 .container {
-	display: flex;
+  display: flex;
+  
+  @include lg {
+    flex-wrap: wrap;
+  }
 }
