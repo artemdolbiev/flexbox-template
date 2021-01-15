@@ -1,34 +1,44 @@
-html {
-	overflow: hidden;
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body {
-	max-width: 1380px;
-	margin: 0 auto;
-	transition: opacity 1s ease 0s;
-	opacity: 1;
-	background-color: #d8b036;
-	background-image: url(../img/global-bg.jpg);
-	background-attachment: fixed;
-	background-position: top center;
-	background-size: cover;
-	font-size: 14px;
-	font-family: $font-main;
-	font-weight: 400;
-	color: $color-light;
+html {
+  font-family: $font-main;
+  font-size: $font-size;
+  line-height: 21px;
+}
 
-	@include lg-min {
-		padding: 0 30px;
-	}
-	@include lg {
-		padding: 0 15px;
-	}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  transition: opacity 1s ease 0s;
+  opacity: 1;
+  background-color: #d8b036;
+  background-image: url(../img/global-bg.jpg);
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+
+  @include lg-min {
+    padding: 0 30px;
+  }
+
+  @include lg {
+    padding: 0 15px;
+  }
 }
 
 a {
 	text-decoration: none;
-	color: inherit;
+  color: #eeeeee;
+  
+  &:hover,
+  :focus {
+    color: #e12727;
+  }
 }
 
 ul,
@@ -43,7 +53,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-	margin: 0;
+  margin: 0;
+  color: #cccccc;
 }
 
 .container {

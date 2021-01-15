@@ -1,0 +1,54 @@
+.right {
+  flex: 0 0 240px;
+  margin-bottom: 15px;
+  order: 3;
+
+  & .widget-news {
+    @include lg-min {
+      width: 240px;
+    }
+  }
+
+  
+}
+
+.widget-news {
+  &__item {
+    &-wrapper {
+      display: flex;
+      margin: 0 -15px 7.5px;
+      padding: 0 15px 7.5px;
+      flex-wrap: wrap;
+    }
+
+    &-title {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      margin: 0 0 10px;
+      transition: color 0.5s;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-weight: 300;
+    }
+
+    &-image {
+      overflow: hidden;
+      width: 75px;
+      height: 75px;
+      border-radius: 4px;
+    }
+
+    &-excerpt {
+      display: -webkit-box;
+      overflow: hidden;
+      width: calc(100% - 75px);
+      max-height: 75px;
+      padding-left: 10px;
+      transition: color 0.5s;
+      color: #cccccc;
+      font-size: 13px;
+      line-height: 19px;
+    }
+  }
+}

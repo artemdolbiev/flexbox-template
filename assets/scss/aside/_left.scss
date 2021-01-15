@@ -1,8 +1,5 @@
 .left {
-
-  @include md-min {
-    flex: 0 0 220px;
-    margin-bottom: 15px;
-    order: 1;
-  }
+  flex: 0 0 220px;
+  margin-bottom: 15px;
+  order: 1;
 }
